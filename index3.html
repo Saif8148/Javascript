@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    
+<input type="text" id="vowel">
+<button onclick="vow()">Click</button>
+<h1 id="result"></h1>
+    <script>
+        // switch (key) {
+        //     case value:
+                //code to be executed 
+        //         break;
+        
+        //     default:
+                //code to be executed 
+        //         break;
+        // }
+
+        // let a  =  8
+        // switch (a) {
+        //         case "Hello":
+        //         case 2:
+        //         case 3:
+        //         case 4:
+        //         case 5:
+        //         console.log("its five");
+        //         break;
+        //     default:
+        //     console.log("its Not a Value");
+        //         break;
+        // }
+        function vow()
+        {
+        let vow = document.getElementById("vowel").value
+        let word = vow.toLowerCase()
+        switch (word) {
+            case "a":
+            case "e":
+            case "i":
+            case "o":
+            case "u":
+            document.getElementById("result").innerHTML="Its a vowel"
+            document.getElementById("result").style.color = "green"
+                break;
+            default:
+            document.getElementById("result").innerHTML="Its not a vowel"
+            document.getElementById("result").style.color = "red"
+
+                break;
+        }
+    }
+    </script>
+</body>
+</html>

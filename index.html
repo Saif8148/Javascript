@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="cal">
+        <table>
+            <tr>
+                <td colspan="4"><input type="text" id="screen"></td>
+            </tr>
+            <tr>
+                <td colspan="4"><button class="clr" onclick="clr()">C</button></td>
+            </tr>
+            <tr>
+                <td><button class="number" onclick="display('7')">7</button></td>
+                <td><button class="number" onclick="display('8')">8</button></td>
+                <td><button class="number" onclick="display('9')">9</button></td>
+                <td><button class="operator" onclick="display('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button class="number" onclick="display('4')">4</button></td>
+                <td><button class="number" onclick="display('5')">5</button></td>
+                <td><button class="number" onclick="display('6')">6</button></td>
+                <td><button class="operator" onclick="display('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button class="number" onclick="display('1')">1</button></td>
+                <td><button class="number" onclick="display('2')">2</button></td>
+                <td><button class="number" onclick="display('3')">3</button></td>
+                <td><button class="operator" onclick="display('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="number" onclick="display('0')">0</button></td>
+                <td><button class="number" onclick="display('.')">.</button></td>
+                <td><button class="operator" onclick="display('+')">+</button></td>
+                <td><button class="ans" onclick="solve()">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
